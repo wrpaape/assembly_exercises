@@ -1,0 +1,18 @@
+program move_add_sub;
+
+#include("stdlib.hhf")
+
+static
+	width1:	int8	:=	-8;
+	width2:	int16	:=	-16;
+	width4:	int32	:=	-32;
+
+begin move_add_sub;
+
+	stdout.put("initial values: {",
+				nl, "width1: ", width1,
+				nl, "width2: ", width2,
+				nl, "width4: ", width4,
+				nl, "}", nl);
+
+end move_add_sub;
