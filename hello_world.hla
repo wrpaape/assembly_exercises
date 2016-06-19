@@ -1,0 +1,9 @@
+program hello_world;
+
+#include("stdlib.hhf")
+
+begin hello_world;
+ 
+	stdout.put("Hello, World of Assembly Language", nl);
+ 
+end hello_world;
