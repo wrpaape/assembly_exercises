@@ -9,10 +9,39 @@ static
 
 begin move_add_sub;
 
-	stdout.put("initial values: {",
-				nl, "width1: ", width1,
-				nl, "width2: ", width2,
-				nl, "width4: ", width4,
-				nl, "}", nl);
+	stdout.put("initial values = {", 		nl,
+			   "	width1: ", width1, ",", nl,
+			   "	width2: ", width2, ",", nl,
+			   "	width4: ", width4, ",", nl,
+			   "}", 						nl);
+
+	mov(0,		al);
+	sub(width1, al);
+	mov(al,		width1);
+
+	mov(0,		ax);
+	sub(width2, ax);
+	mov(ax,		width2);
+
+	mov(0,		eax);
+	sub(width4, eax);
+	mov(eax,		width4);
+
+	stdout.put("flipped values = {", 		nl,
+			   "	width1: ", width1, ",", nl,
+			   "	width2: ", width2, ",", nl,
+			   "	width4: ", width4, ",", nl,
+			   "}", 						nl);
+
+	add(100,  	 width1);
+	add(10000,	 width2);
+	add(1000000, width4);
+
+	stdout.put("adding constants = {", 		nl,
+			   "	width1: ", width1, ",", nl,
+			   "	width2: ", width2, ",", nl,
+			   "	width4: ", width4, ",", nl,
+			   "}", 						nl);
+
 
 end move_add_sub;

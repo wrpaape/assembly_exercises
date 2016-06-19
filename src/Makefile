@@ -18,12 +18,12 @@ BIN := ../bin
 OBJ := ../obj
 SRC := .
 
-HLA_FLAGS += -i:$(SRC) -obj:$(OBJ)
+HLA_CMD := $(HLA) $(HLA_FLAGS) -i:$(SRC) -obj:$(OBJ)
 
 define HLA_RULE
 $(NEWLINE)
 $(strip $1: $2)
-	$(HLA) $(HLA_FLAGS) -v $$< -x:$$@
+	$(HLA_CMD) $$< -x:$$@
 
 BINARIES += $1
 OBJECTS  += $3
