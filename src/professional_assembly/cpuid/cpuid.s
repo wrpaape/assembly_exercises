@@ -1,11 +1,11 @@
 # cpuid.s Sample program to extract the processor Vendor ID
 # ------------------------------------------------------------------------------
-.data
+.section .data
 output:
     .ascii "The Processor Vendor ID is 'XXXXXXXXXXXX'\n"
 
-.text
-.global _main
+.section .text
+.globl _main
 _main:
     movl $0, %eax
     cpuid
