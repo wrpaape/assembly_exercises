@@ -5,8 +5,8 @@ output:
     .ascii "The Processor Vendor ID is 'XXXXXXXXXXXX'\n"
 
 .section .text
-.globl _main
-_main:
+.globl _start
+_start:
     movl $0, %eax
     cpuid
     movl $output, %edi
