@@ -3,7 +3,7 @@
 all: cpuid2
 
 cpuid2: cpuid2.s
-	as -gstabs cpuid2.s -o cpuid2.o
+	as -gstabs --32 cpuid2.s -o cpuid2.o
 	ld cpuid2.o -lc -o cpuid2
 
 clean:
