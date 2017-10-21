@@ -1,4 +1,4 @@
-TARGETS       := hla professional_assembly assembly64
+TARGETS       := babbys_first
 ALL_TARGETS   := $(patsubst %,_all_%,$(TARGETS))
 CLEAN_TARGETS := $(patsubst %,_clean_%,$(TARGETS))
 

@@ -1,7 +1,13 @@
-.PHONY: all clean
+TARGETS       := cpuid cpuid2
+ALL_TARGETS   := $(patsubst %,_all_%,$(TARGETS))
+CLEAN_TARGETS := $(patsubst %,_clean_%,$(TARGETS))
 
-all:
-	@echo professional_assembly:all
+.PHONY: all $(ALL_TARGETS)
+all: $(ALL_TARGETS)
+$(ALL_TARGETS):
+	$(MAKE) $(MFLAGS) -C $(patsubst _all_%,%,$@) all
 
-clean:
-	@echo professional_assembly:clean
+.PHONY: clean $(CLEAN_TARGETS)
+clean: $(CLEAN_TARGETS)
+$(CLEAN_TARGETS):
+	$(MAKE) $(MFLAGS) -C $(patsubst _clean_%,%,$@) clean
