@@ -1,4 +1,4 @@
-TARGETS       := cpuid cpuid2
+TARGETS       := cpuid cpuid2 movtest1 movtest2
 ALL_TARGETS   := $(patsubst %,_all_%,$(TARGETS))
 CLEAN_TARGETS := $(patsubst %,_clean_%,$(TARGETS))
 

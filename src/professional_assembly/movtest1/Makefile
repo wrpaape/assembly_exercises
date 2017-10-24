@@ -1,4 +1,4 @@
-EXECUTABLE      := cpuid2
+EXECUTABLE      := movtest1
 SOURCES         := $(EXECUTABLE).s
 OBJECTS         := $(EXECUTABLE).o
 ASSEMBLER       ?= as

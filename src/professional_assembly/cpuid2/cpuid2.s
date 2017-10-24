@@ -1,6 +1,5 @@
 # cpuid.s Sample program to extract the processor Vendor ID
 # ------------------------------------------------------------------------------
-.code32
 .section .data
 output:
     .asciz "The Processor Vendor ID is '%s'\n"
