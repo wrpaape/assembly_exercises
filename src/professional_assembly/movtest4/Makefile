@@ -1,4 +1,4 @@
-EXECUTABLE      := movtest3
+EXECUTABLE      := movtest4
 SOURCES         := $(EXECUTABLE).s
 OBJECTS         := $(EXECUTABLE).o
 ASSEMBLER       ?= as
