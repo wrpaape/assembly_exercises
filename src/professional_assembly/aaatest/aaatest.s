@@ -4,7 +4,7 @@ value1:
 value2:
     .byte 0x03, 0x03, 0x09, 0x02, 0x05
     .asciz "The result is %qd\n"
-.section .bass
+.section .bss
     .lcomm sum, 6
 .section .text
 .globl _start
